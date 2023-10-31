@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+  font-family: "Readex Pro", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../images/download.png");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+p {
+  font-size: 15px;
+}
+
+.auth-modal {
+  background-color: rgb(255, 255, 255);
+  width: 360px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: rgb(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+}
+
+.auth-modal  form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-modal input {
+  padding: 8px;
+  margin: 8px;
+  font-size: 17px;
+}
+
+.auth-modal .form-button {
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 6px;
+  border-radius: 30px;
+  border: rgb(255, 255, 255) solid 2px;
+  background: linear-gradient(45deg, rgb(185, 48, 244), rgb(255,64, 153));
+}
+
+.auth-modal .form-button:hover {
+color: rgb(48, 48, 48);
+border: solid 2px rgb(48, 48, 48);
+}
+
+.auth-modal .link-container {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.auth-modal .link-container img {
+  width: 170px;
+margin: 5px;
+}
+.close-icon {
+  float: right;
+}
+
+input[type=text], [type=password] {
+border: none;
+outline: 1px solid rgb(153,149,149);
+border-radius: 5px;
+}
+
+input[type=text]:focus, [type=password]:focus{
+  border: none;
+  outline: 1px solid rgb(255,64,253);
+}
